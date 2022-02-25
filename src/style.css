@@ -1,0 +1,83 @@
+.wrapper{
+    height: 88vh;
+    display: flex;
+    background: linear-gradient(#26222e, #23232e);
+}
+
+.top-nav{
+    height: 12vh;
+    width: 100%;
+    background: linear-gradient(#242330, #323341);
+}
+
+.secure-password-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.secure-password-btn:hover{
+    color: rgb(184, 184, 184);
+    transform: scale(100%, 105%);
+    transition: 500ms;
+}
+
+.container1, .container2{
+    width: 100%;
+    height: 100%;
+}
+
+.passwords{
+    overflow-y: scroll;
+    width: 90%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.24);
+    margin: 1rem;
+}
+
+::-webkit-scrollbar {
+    scrollbar-color: #999 #333;
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 10px; /* Mostly for horizontal scrollbars */
+}
+::-webkit-scrollbar-thumb { /* Foreground */
+    background: #999;
+}
+::-webkit-scrollbar-track { /* Background */
+    background: #333;
+}
+
+.password-option{
+    margin: 1rem;
+    color: #FFF;
+    display: flex;
+}
+
+.password-option-range{
+    width: 100%;
+    margin-left: .5rem;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #8d8d8d; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.password-option-range::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #ffffff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
