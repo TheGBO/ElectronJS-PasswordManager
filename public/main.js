@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+const isDev = require('electron-is-dev');
 
 function createWindow() {
     const win =  new BrowserWindow({
@@ -6,11 +7,11 @@ function createWindow() {
         height:600,
         webPreferences:{
             nodeIntegration:true,
-            
+            enableRemoteModule:true
         }
     });
     win.setMenu(null);
-    win.loadURL("http://localhost:3069");
+    win.loadURL(isDev ? "http://localhost:3069" : "../build/index.html");
     console.log("window created");
 }
 
