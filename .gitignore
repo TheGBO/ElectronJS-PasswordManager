@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#directories
+bower_components
+node_modules
+dist
+
+#files
+*.tgz
+*.log

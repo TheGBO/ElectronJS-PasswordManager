@@ -1,3 +1,4 @@
-### W.I.P
+### KTronPassMan
+a simple electron.js password manager using localstorage, i made this to learn react.js and electron.js
 
-![plot](./screenshots/2022-02-25_10-55.png)
+![plot](./screenshots/new.png)
