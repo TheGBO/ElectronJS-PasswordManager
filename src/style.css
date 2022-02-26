@@ -1,3 +1,7 @@
+html{
+    overflow: hidden;
+}
+
 .wrapper{
     height: 88vh;
     display: flex;
@@ -6,6 +10,7 @@
 
 .top-nav{
     height: 12vh;
+    min-height: 70px;
     width: 100%;
     background: linear-gradient(#242330, #323341);
 }
@@ -81,3 +86,76 @@
   cursor: pointer; /* Cursor on hover */
 }
 
+.custom-input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 5px;
+    background-color: #0000003d;
+    color: #FFF;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    background-color: #00000025;
+}
+
+.password-options{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.password-options h1{
+    font-size: 35px;
+    color: #FFF;
+}
+
+.generate-btn * {
+    width: 50px;
+    height: 50px;
+}
+
+.generate-btn{
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    width: 100%;
+    transition: 0.5s;
+    background-color: #494d88;
+}
+
+.generate-btn:hover{
+    transition: 0.5s;
+    background-color: #323341;
+}
+
+.password-element{
+    background-color: #292929;
+    display: flex;
+}
+
+.pe-child{
+    color: #FFF;
+    padding: 5px;
+    width: 100%;
+}
+
+.pc-pass{
+    background-color: #4baf50;
+}
+
+.pc-delbtn{
+    background-color: #8f2828;
+    cursor: pointer;
+}
+
+.pc-delbtn:hover{
+    background-color: #501616;
+}

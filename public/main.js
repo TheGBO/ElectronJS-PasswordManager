@@ -4,10 +4,14 @@ function createWindow() {
     const win =  new BrowserWindow({
         width:800,
         height:600,
-        webPreferences:{}
+        webPreferences:{
+            nodeIntegration:true,
+            
+        }
     });
     win.setMenu(null);
-    win.loadURL("http://localhost:3000");
+    win.loadURL("http://localhost:3069");
+    console.log("window created");
 }
 
 app.on('ready', createWindow);
